@@ -23,30 +23,14 @@
    Left Content
    ========================= */
 .insta_login_section .insta-logo {
-    display: block;
     margin-bottom: var(--space-24);
 }
 
-
 .insta_login_section h1 {
+    font-weight: var(--font-weight-nomral);
+    text-align: center;
     max-width: 500px;
-    margin: 0 0 var(--space-32);
-    font-family: var(--font-family);
-    font-size: 28px;
-    font-weight: var(--font-weight-medium);
-    line-height: 34px;
-    color: var(--ig-text);
 }
-
-
-.insta_login_section .insta-login-img {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: contain;
-}
-
 
 /* =========================
    Right Content
@@ -54,10 +38,265 @@
 
 .insta_login_section .login-content {
     width: 100%;
+    height: 100%;
+    padding-left: var(--space-48);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--ig-text);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* =========================================================
+   Login Heading
+   ========================================================= */
+
+.login-box h2 {
+    font-size: var(--font-size-lg);
+}
+
+
+/* =========================================================
+   Form
+   ========================================================= */
+
+.login-form {
+    width: 100%;
+}
+
+
+.login-form input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 12px;
+    padding: 0 16px;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    outline: none;
+    background-color: var(--ig-background);
+    color: var(--ig-text);
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-normal);
+    transition: border-color 0.2s ease;
+}
+
+
+.login-form input::placeholder {
+    color: var(--ig-secondary-text);
+    opacity: 1;
+}
+
+
+.login-form input:focus {
+    border-color: #a8a8a8;
+}
+
+
+/* =========================================================
+   Login Button
+   ========================================================= */
+
+.login-button {
+    width: 100%;
+    height: 44px;
+
+    margin-top: 12px;
+
+    border: 0;
+    border-radius: var(--radius-lg);
+
+    background-color: #95bdf0;
+    color: var(--ig-white);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.login-button:hover {
+    background-color: #80afea;
+}
+
+
+/* =========================================================
+   Forgot Password
+   ========================================================= */
+
+.forgot-password {
+    margin-top: 24px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--ig-text);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-normal);
+
+    cursor: pointer;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   Divider
+   ========================================================= */
+
+.login-divider {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 32px 0 20px;
+
+    gap: 16px;
+}
+
+
+.login-divider span:first-child,
+.login-divider span:last-child {
+    flex: 1;
+
+    height: 1px;
+
+    background-color: var(--ig-border);
+}
+
+
+.login-divider span:nth-child(2) {
+    color: var(--ig-secondary-text);
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+}
+
+
+/* =========================================================
+   Facebook Login
+   ========================================================= */
+
+.facebook-login {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    border: 0;
+    border-radius: 22px;
+
+    background-color: #f2f3f5;
+    color: var(--ig-text);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-normal);
+
+    cursor: pointer;
+}
+
+
+.facebook-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #1877f2;
+    color: var(--ig-white);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   Create Account
+   ========================================================= */
+
+.create-account {
+    width: 100%;
+    height: 44px;
+
+    margin-top: 12px;
+
+    border: 1px solid var(--ig-link);
+    border-radius: 22px;
+
+    background-color: var(--ig-background);
+    color: var(--ig-link);
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.create-account:hover {
+    background-color: #f5faff;
+}
+
+
+/* =========================================================
+   Meta
+   ========================================================= */
+
+.meta-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    margin-top: 28px;
+
+    color: #262626;
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+}
+
+
+.meta-logo {
+    color: #0095f6;
+
+    font-size: 22px;
+    font-weight: var(--font-weight-bold);
+
+    line-height: 1;
 }
 
 

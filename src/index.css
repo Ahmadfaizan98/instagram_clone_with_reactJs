@@ -3,198 +3,234 @@
    ========================================================= */
 
 @font-face {
-  font-family: "Instagram Sans";
-  src: url("./Instagram Sans Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Instagram Sans";
+    src: url("./assets/fonts/Instagram Sans Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Instagram Sans";
-  src: url("./Instagram Sans.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Instagram Sans";
+    src: url("./assets/fonts/Instagram Sans.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Instagram Sans";
-  src: url("./Instagram Sans Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Instagram Sans";
+    src: url("./assets/fonts/Instagram Sans Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Instagram Sans";
-  src: url("./Instagram Sans Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Instagram Sans";
+    src: url("./assets/fonts/Instagram Sans Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
-/*
-  Headline is registered separately because it is
-  a display/branding typeface rather than a normal
-  text weight.
-*/
 @font-face {
-  font-family: "Instagram Sans Headline";
-  src: url("./Instagram Sans Headline.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Instagram Sans Headline";
+    src: url("./assets/fonts/Instagram Sans Headline.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
+/* =========================================================
+   Optimistic Font
+   ========================================================= */
+
+@font-face {
+    font-family: "Optimistic";
+    src: url("./assets/fonts/optimistic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* =========================================================
    Root Variables
    ========================================================= */
 
 :root {
-  /* =========================
-     Instagram Colors
-     ========================= */
 
-  --ig-black: #000000;
-  --ig-white: #ffffff;
+    /* =========================
+       Instagram Colors
+       ========================= */
 
-  --ig-text: #000000;
-  --ig-secondary-text: #737373;
+    --ig-black: #111112;
+    --ig-white: #ffffff;
 
-  --ig-link: #0095f6;
-  --ig-link-hover: #00376b;
+    --ig-text: #111112;
+    --ig-secondary-text: #737373;
 
-  --ig-border: #dbdbdb;
+    --ig-link: #0095f6;
+    --ig-link-hover: #00376b;
 
-  --ig-background: #ffffff;
-  --ig-secondary-background: #fafafa;
+    --ig-border: #dbdbdb;
 
-  --ig-error: #ed4956;
-  --ig-success: #00a400;
+    --ig-background: #ffffff;
+    --ig-secondary-background: #fafafa;
 
+    --ig-error: #ed4956;
+    --ig-success: #00a400;
 
-  /* =========================
-     Typography
-     ========================= */
-
-  --font-family:
-    "Instagram Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-
-  --font-family-headline:
-    "Instagram Sans Headline",
-    "Instagram Sans",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+    --gradient: linear-gradient(to right, #fb724b, #ff0069, #d300c5);
 
 
-  /* =========================
-     Font Sizes
-     ========================= */
+    /* =========================
+       Typography
+       ========================= */
 
-  --font-size-xs: 11px;
-  --font-size-sm: 12px;
-  --font-size-base: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 20px;
-  --font-size-xl: 24px;
+    --font-family: "Instagram Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
+    --font-family-headline:
+        "Instagram Sans Headline",
+        "Instagram Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-  /* =========================
-     Font Weights
-     ========================= */
-
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-
-  /* =========================
-     Layout
-     ========================= */
-
-  --sidebar-width: 244px;
-  --sidebar-collapsed-width: 72px;
-
-  --content-max-width: 975px;
-  --feed-width: 630px;
+    --font-family-optimistic:
+        "Optimistic",
+        "Instagram Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
 
-  /* =========================
-     Spacing
-     ========================= */
+    /* =========================
+       Font Sizes
+       ========================= */
 
-  --space-4: 4px;
-  --space-8: 8px;
-  --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-
-
-  /* =========================
-     Borders
-     ========================= */
-
-  --border-width: 1px;
-  --border: 1px solid var(--ig-border);
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 30px;
+    --font-size-3xl: 40px;
+    --font-size-4xl: 53px;
 
 
-  /* =========================
-     Radius
-     ========================= */
+    /* =========================
+       Font Weights
+       ========================= */
 
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-full: 50%;
-
-
-  /* =========================
-     UI
-     ========================= */
-
-  --button-height: 32px;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
 
-  /* =========================
-     Global
-     ========================= */
+    /* =========================
+       Line Heights
+       ========================= */
 
-  font-family: var(--font-family);
+    --leading-base: 1;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
 
-  font-size: 14px;
-  font-weight: var(--font-weight-normal);
-  line-height: 18px;
 
-  color: var(--ig-text);
-  background-color: var(--ig-background);
+    /* =========================
+       Spacing
+       ========================= */
 
-  font-synthesis: none;
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-28: 28px;
+    --space-32: 32px;
+    --space-36: 36px;
+    --space-40: 40px;
+    --space-44: 44px;
+    --space-48: 48px;
 
-  text-rendering: optimizeLegibility;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* =========================
+       Borders
+       ========================= */
 
-  color-scheme: light;
+    --border-width: 1px;
+    --border: 1px solid var(--ig-border);
+
+
+    /* =========================
+       Radius
+       ========================= */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 50%;
+
+
+    /* =========================
+       UI
+       ========================= */
+
+    --button-height: 32px;
+
+
+    /* =========================
+       Global
+       ========================= */
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--leading-normal);
+    color: var(--ig-text);
+    background-color: var(--ig-background);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: light;
+}
+
+
+/* =========================================================
+   Mobile Font Sizes
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    :root {
+        --font-size-xs: 11px;
+        --font-size-sm: 13px;
+        --font-size-base: 15px;
+        --font-size-md: 16px;
+        --font-size-lg: 18px;
+        --font-size-xl: 20px;
+        --font-size-2xl: 25px;
+        --font-size-3xl: 30px;
+        --font-size-4xl: 40px;
+    }
 }
 
 
@@ -205,35 +241,31 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  width: 100%;
-  min-height: 100%;
+    width: 100%;
+    min-height: 100%;
 }
 
 
 body {
-  margin: 0;
-  padding: 0;
-
-  width: 100%;
-  min-width: 320px;
-  min-height: 100vh;
-
-  font-family: var(--font-family);
-
-  font-size: 14px;
-  font-weight: var(--font-weight-normal);
-  line-height: 18px;
-
-  color: var(--ig-text);
-  background-color: var(--ig-background);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--leading-normal);
+    color: var(--ig-text);
+    background-color: var(--ig-background);
 }
 
 
@@ -242,11 +274,10 @@ body {
    ========================================================= */
 
 #root {
-  width: 100%;
-  min-height: 100vh;
-
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -260,67 +291,92 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
-
-  color: var(--ig-text);
-
-  font-family: var(--font-family);
-
-  font-weight: var(--font-weight-semibold);
+  line-height: var(--leading-tight);
+    color: var(--ig-text);
+    margin: 0 0 var(--space-24);
 }
 
+
+/* =========================
+   H1 - Instagram Sans
+   ========================= */
 
 h1 {
-  font-size: 24px;
-  line-height: 28px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-semibold);
 }
 
+
+/* =========================
+   H2 - Optimistic
+   ========================= */
 
 h2 {
-  font-size: 20px;
-  line-height: 24px;
+    font-family: var(--font-family-optimistic);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-normal);
 }
 
+
+/* =========================
+   H3 - Optimistic
+   ========================= */
 
 h3 {
-  font-size: 16px;
-  line-height: 20px;
+    font-family: var(--font-family-optimistic);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-normal);
 }
 
+
+/* =========================
+   H4 - Optimistic
+   ========================= */
 
 h4 {
-  font-size: 14px;
-  line-height: 18px;
+    font-family: var(--font-family-optimistic);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-normal);
 }
 
+
+/* =========================
+   H5 - Optimistic
+   ========================= */
 
 h5 {
-  font-size: 12px;
-  line-height: 16px;
+    font-family: var(--font-family-optimistic);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-normal);
 }
 
 
+/* =========================
+   H6 - Optimistic
+   ========================= */
+
 h6 {
-  font-size: 11px;
-  line-height: 14px;
+    font-family: var(--font-family-optimistic);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
 }
 
 
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
 span {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 
@@ -328,72 +384,71 @@ button,
 input,
 textarea,
 select {
-  font-family: inherit;
+    font-family: inherit;
 }
+
 
 /* =========================================================
    Container
    ========================================================= */
+
 .container {
-  width: 100%;
-  max-width: 1820px;
-  margin: 0 auto;
-  padding: 0 var(--space-24);
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 0 var(--space-24);
 }
+
 
 /* =========================================================
    Instagram Typography Utility Classes
    ========================================================= */
 
-/* Light - 300 */
 .font-light {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 300;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 300;
 }
 
 
-/* Regular - 400 */
 .font-regular {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 400;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 400;
 }
 
 
-/* Medium - 500 */
 .font-medium {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 500;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 500;
 }
 
 
-/* Semibold
-   Instagram does not have a separate 600 file,
-   so browser will use the closest available weight.
-*/
 .font-semibold {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 600;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 600;
 }
 
 
-/* Bold - 700 */
 .font-bold {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 700;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 700;
 }
 
 
-/* Headline */
 .font-headline {
-  font-family: "Instagram Sans Headline", sans-serif;
-  font-weight: 400;
+    font-family: "Instagram Sans Headline", sans-serif;
+    font-weight: 400;
 }
 
 
-/* Instagram Logo / Branding */
+.font-optimistic {
+    font-family: var(--font-family-optimistic);
+    font-weight: 400;
+}
+
+
 .instagram-logo {
-  font-family: "Instagram Sans Headline", sans-serif;
-  font-weight: 400;
+    font-family: "Instagram Sans Headline", sans-serif;
+    font-weight: 400;
 }
 
 
@@ -402,22 +457,22 @@ select {
    ========================================================= */
 
 button {
-  border: 0;
-  padding: 0;
-  margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
 
-  background: none;
-  color: inherit;
+    background: none;
+    color: inherit;
 
-  font-family: inherit;
-  font-size: inherit;
+    font-family: inherit;
+    font-size: inherit;
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
 button:disabled {
-  cursor: default;
+    cursor: default;
 }
 
 
@@ -426,8 +481,8 @@ button:disabled {
    ========================================================= */
 
 img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -437,17 +492,17 @@ img {
 
 input,
 textarea {
-  border: 0;
-  outline: 0;
+    border: 0;
+    outline: 0;
 
-  background: transparent;
-  color: var(--ig-text);
+    background: transparent;
+    color: var(--ig-text);
 }
 
 
 input::placeholder,
 textarea::placeholder {
-  color: var(--ig-secondary-text);
+    color: var(--ig-secondary-text);
 }
 
 
@@ -456,8 +511,8 @@ textarea::placeholder {
    ========================================================= */
 
 ::selection {
-  background: #b2dffc;
-  color: #000000;
+    background: #b2dffc;
+    color: #000000;
 }
 
 
@@ -466,24 +521,24 @@ textarea::placeholder {
    ========================================================= */
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 
 ::-webkit-scrollbar-thumb {
-  background: #c7c7c7;
-  border-radius: 10px;
+    background: #c7c7c7;
+    border-radius: 10px;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+    background: #a8a8a8;
 }
 
 
@@ -492,48 +547,25 @@ textarea::placeholder {
    ========================================================= */
 
 .text-secondary {
-  color: var(--ig-secondary-text);
+    color: var(--ig-secondary-text);
 }
 
 
 .text-link {
-  color: var(--ig-link);
-  font-weight: var(--font-weight-semibold);
+    color: var(--ig-link);
+    font-weight: var(--font-weight-semibold);
 }
 
 
 .text-bold {
-  font-family: "Instagram Sans", sans-serif;
-  font-weight: 700;
+    font-family: "Instagram Sans", sans-serif;
+    font-weight: 700;
 }
 
 
-/* =========================================================
-   Responsive
-   ========================================================= */
+.gradient-text {
+    background-image: var(--gradient);
+    background-clip: text;
 
-@media (max-width: 1264px) {
-  :root {
-    --sidebar-width: 72px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  :root {
-    --font-size-base: 14px;
-  }
-
-  body {
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    line-height: 18px;
-  }
+    color: transparent;
 }
