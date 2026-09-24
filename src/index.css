@@ -1,111 +1,539 @@
+/* =========================================================
+   Instagram Sans Fonts
+   ========================================================= */
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("./Instagram Sans Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("./Instagram Sans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("./Instagram Sans Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instagram Sans";
+  src: url("./Instagram Sans Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  Headline is registered separately because it is
+  a display/branding typeface rather than a normal
+  text weight.
+*/
+@font-face {
+  font-family: "Instagram Sans Headline";
+  src: url("./Instagram Sans Headline.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* =========================================================
+   Root Variables
+   ========================================================= */
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* =========================
+     Instagram Colors
+     ========================= */
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --ig-black: #000000;
+  --ig-white: #ffffff;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  --ig-text: #000000;
+  --ig-secondary-text: #737373;
+
+  --ig-link: #0095f6;
+  --ig-link-hover: #00376b;
+
+  --ig-border: #dbdbdb;
+
+  --ig-background: #ffffff;
+  --ig-secondary-background: #fafafa;
+
+  --ig-error: #ed4956;
+  --ig-success: #00a400;
+
+
+  /* =========================
+     Typography
+     ========================= */
+
+  --font-family:
+    "Instagram Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  --font-family-headline:
+    "Instagram Sans Headline",
+    "Instagram Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+
+  /* =========================
+     Font Sizes
+     ========================= */
+
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+
+
+  /* =========================
+     Font Weights
+     ========================= */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* =========================
+     Layout
+     ========================= */
+
+  --sidebar-width: 244px;
+  --sidebar-collapsed-width: 72px;
+
+  --content-max-width: 975px;
+  --feed-width: 630px;
+
+
+  /* =========================
+     Spacing
+     ========================= */
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+
+
+  /* =========================
+     Borders
+     ========================= */
+
+  --border-width: 1px;
+  --border: 1px solid var(--ig-border);
+
+
+  /* =========================
+     Radius
+     ========================= */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 50%;
+
+
+  /* =========================
+     UI
+     ========================= */
+
+  --button-height: 32px;
+
+
+  /* =========================
+     Global
+     ========================= */
+
+  font-family: var(--font-family);
+
+  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+
+  color: var(--ig-text);
+  background-color: var(--ig-background);
+
   font-synthesis: none;
+
   text-rendering: optimizeLegibility;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
+/* =========================================================
+   Reset
+   ========================================================= */
 
-body {
-  margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+
+html {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100%;
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: var(--font-family);
+
+  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+
+  color: var(--ig-text);
+  background-color: var(--ig-background);
+}
+
+
+/* =========================================================
+   React Root
+   ========================================================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+  color: var(--ig-text);
+
+  font-family: var(--font-family);
+
+  font-weight: var(--font-weight-semibold);
+}
+
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
   font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  line-height: 28px;
 }
+
+
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+h5 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+h6 {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+
 p {
   margin: 0;
+  padding: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+
+span {
+  font-family: inherit;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* =========================================================
+   Container
+   ========================================================= */
+.container {
+  width: 100%;
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 var(--space-24);
+}
+
+/* =========================================================
+   Instagram Typography Utility Classes
+   ========================================================= */
+
+/* Light - 300 */
+.font-light {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 300;
+}
+
+
+/* Regular - 400 */
+.font-regular {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 400;
+}
+
+
+/* Medium - 500 */
+.font-medium {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 500;
+}
+
+
+/* Semibold
+   Instagram does not have a separate 600 file,
+   so browser will use the closest available weight.
+*/
+.font-semibold {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 600;
+}
+
+
+/* Bold - 700 */
+.font-bold {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 700;
+}
+
+
+/* Headline */
+.font-headline {
+  font-family: "Instagram Sans Headline", sans-serif;
+  font-weight: 400;
+}
+
+
+/* Instagram Logo / Branding */
+.instagram-logo {
+  font-family: "Instagram Sans Headline", sans-serif;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  color: inherit;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  cursor: pointer;
+}
+
+
+button:disabled {
+  cursor: default;
+}
+
+
+/* =========================================================
+   Images
+   ========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   Forms
+   ========================================================= */
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+  color: var(--ig-text);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--ig-secondary-text);
+}
+
+
+/* =========================================================
+   Selection
+   ========================================================= */
+
+::selection {
+  background: #b2dffc;
+  color: #000000;
+}
+
+
+/* =========================================================
+   Scrollbar
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+
+/* =========================================================
+   Utility Classes
+   ========================================================= */
+
+.text-secondary {
+  color: var(--ig-secondary-text);
+}
+
+
+.text-link {
+  color: var(--ig-link);
+  font-weight: var(--font-weight-semibold);
+}
+
+
+.text-bold {
+  font-family: "Instagram Sans", sans-serif;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 1264px) {
+  :root {
+    --sidebar-width: 72px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

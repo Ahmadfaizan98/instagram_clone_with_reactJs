@@ -1,0 +1,94 @@
+.insta_login_section {
+    background-color: var(--ig-background);
+    color: var(--ig-text);
+    font-family: var(--font-family);
+}
+
+.insta_login_section .MuiGrid-container .insta_login_left_content {
+    padding: var(--space-40) 0;
+}
+
+.insta_login_section .MuiGrid-container .insta_login_left_content .flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insta_login_section .MuiGrid-container .insta_login_right_content {
+    border-left: 2px solid var(--ig-border);
+    height: 100vh;
+}
+
+/* =========================
+   Left Content
+   ========================= */
+.insta_login_section .insta-logo {
+    display: block;
+    margin-bottom: var(--space-24);
+}
+
+
+.insta_login_section h1 {
+    max-width: 500px;
+    margin: 0 0 var(--space-32);
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: var(--font-weight-medium);
+    line-height: 34px;
+    color: var(--ig-text);
+}
+
+
+.insta_login_section .insta-login-img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================
+   Right Content
+   ========================= */
+
+.insta_login_section .login-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ig-text);
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 899px) {
+    .insta_login_section {
+        min-height: auto;
+    }
+
+    .insta_login_section .container {
+        padding: var(--space-40) var(--space-20);
+    }
+
+    .insta_login_section .insta-logo {
+        margin: 0 auto var(--space-24);
+    }
+
+    .insta_login_section h1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .insta_login_section .insta-login-img {
+        margin: 0 auto;
+    }
+
+    .insta_login_section .login-content {
+        margin-top: var(--space-40);
+    }
+}

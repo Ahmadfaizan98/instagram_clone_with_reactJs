@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import './App.css'
+
+import LoginPage from "./components/LoginPage/LoginPage";
 
 function App() {
   return (
-    <>
-    <h1>Hi, this is my new React project!</h1>
-    </>
-  )
+    <LoginPage />
+  );
 }
 
-export default App
+export default App;
