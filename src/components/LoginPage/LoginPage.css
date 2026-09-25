@@ -331,3 +331,13 @@
         margin-top: var(--space-40);
     }
 }
+
+@media (max-width: 480px) {
+    .login-box {
+        max-width: 100%;
+    }
+
+    .login-form input {
+        height: 56px;
+    }
+}

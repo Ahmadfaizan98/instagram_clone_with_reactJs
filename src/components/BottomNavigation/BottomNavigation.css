@@ -1,0 +1,75 @@
+.bottom-navigation {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--ig-background);
+    border-top: var(--border);
+
+    padding-bottom: env(safe-area-inset-bottom);
+
+    z-index: 1000;
+}
+
+
+/* ========================================
+   NAVIGATION ITEM
+======================================== */
+
+.bottom-nav-item {
+    flex: 1;
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--ig-text);
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.bottom-nav-item svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ========================================
+   ACTIVE ITEM
+======================================== */
+
+.bottom-nav-item.active {
+    color: var(--ig-black);
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 768px) {
+
+    .bottom-navigation {
+        display: none;
+    }
+
+}

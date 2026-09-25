@@ -1,0 +1,39 @@
+.home-page {
+    min-height: 100vh;
+    background-color: var(--ig-background);
+
+    /*
+     * Space for the fixed mobile bottom navigation.
+     * Without this, the last post could be hidden behind it.
+     */
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+}
+
+.home-content {
+    width: 100%;
+}
+
+.home-feed {
+    width: 100%;
+}
+
+
+/* ========================================
+   TABLET / DESKTOP
+======================================== */
+
+@media (min-width: 768px) {
+
+    .home-page {
+        padding-bottom: 0;
+    }
+
+    .home-content {
+        max-width: 975px;
+        margin: 0 auto;
+    }
+
+    .bottom-navigation {
+        display: none;
+    }
+}
