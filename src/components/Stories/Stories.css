@@ -1,0 +1,40 @@
+.stories-section {
+    width: 100%;
+    padding: 12px 0 14px;
+
+    overflow: hidden;
+
+    background-color: var(--ig-background);
+    border-bottom: var(--border);
+}
+
+.stories-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 0 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+}
+
+.stories-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .stories-section {
+        border: var(--border);
+        border-radius: var(--radius-md);
+        margin: 20px 0;
+    }
+
+    .stories-list {
+        gap: 16px;
+        padding: 4px 16px;
+    }
+}

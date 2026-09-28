@@ -1,0 +1,44 @@
+.post-caption-section {
+    padding: 0 12px 12px;
+}
+
+.post-likes {
+    margin: 0 0 6px;
+
+    color: var(--ig-text);
+    font-size: 13px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.post-caption {
+    margin: 0 0 6px;
+
+    color: var(--ig-text);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.post-caption-username {
+    font-weight: var(--font-weight-semibold);
+}
+
+.view-comments-button {
+    display: block;
+
+    margin: 0 0 6px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+
+    color: var(--ig-secondary-text);
+    font-family: var(--font-family);
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.post-time {
+    color: var(--ig-secondary-text);
+    font-size: 10px;
+    letter-spacing: 0.2px;
+}

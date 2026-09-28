@@ -1,0 +1,46 @@
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 12px 6px;
+}
+
+.post-actions-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.post-action-button {
+    width: 26px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 0;
+    background: transparent;
+
+    color: var(--ig-text);
+    cursor: pointer;
+}
+
+.post-action-button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.post-action-button.liked {
+    color: var(--ig-error);
+}
+
+.post-action-button.saved {
+    color: var(--ig-text);
+}
+
+.save-button {
+    margin-left: auto;
+}

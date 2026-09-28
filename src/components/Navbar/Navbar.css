@@ -1,0 +1,58 @@
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--space-16);
+    background-color: var(--ig-background);
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    color: var(--ig-text);
+    font-family: var(--font-family-optimistic);
+    font-size: 27px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -1.2px;
+    text-decoration: none;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-20);
+}
+
+.navbar-icon-button {
+    width: 32px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ig-text);
+    cursor: pointer;
+}
+
+.navbar-icon-button svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* Desktop adjustment */
+@media (min-width: 768px) {
+    .navbar {
+        height: 64px;
+        padding: 0 24px;
+    }
+
+    .navbar-logo {
+        font-size: 28px;
+    }
+}

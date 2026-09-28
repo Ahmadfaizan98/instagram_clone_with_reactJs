@@ -1,0 +1,55 @@
+.post-header {
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 12px;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.post-user-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.post-username {
+    color: var(--ig-text);
+    font-size: 13px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.post-location {
+    color: var(--ig-text);
+    font-size: 11px;
+}
+
+.post-more-button {
+    border: 0;
+    background: transparent;
+
+    color: var(--ig-text);
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+
+    cursor: pointer;
+}
