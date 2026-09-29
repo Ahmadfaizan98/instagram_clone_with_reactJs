@@ -1,7 +1,7 @@
 import React from "react";
 import "./Comment.css";
 
-function Comment({ username, caption, likes }) {
+function Comment({ username, caption, likes, time }) {
     return (
         <div className="post-caption-section">
 
@@ -10,15 +10,22 @@ function Comment({ username, caption, likes }) {
             </p>
 
             <p className="post-caption">
-                <span className="post-caption-username">{username}</span>{" "}
+                <span className="post-caption-username">
+                    {username}
+                </span>{" "}
                 {caption}
             </p>
 
-            <button className="view-comments-button" type="button">
+            <button
+                className="view-comments-button"
+                type="button"
+            >
                 View all comments
             </button>
 
-            <span className="post-time">2 HOURS AGO</span>
+            <span className="post-time">
+                {time}
+            </span>
 
         </div>
     );

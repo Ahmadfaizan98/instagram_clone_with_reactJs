@@ -6,16 +6,7 @@ import Comment from "../Comment/Comment";
 
 import "./Post.css";
 
-function Post() {
-
-    const post = {
-        username: "john_doe",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
-        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000&h=1000&fit=crop",
-        likes: 1250,
-        caption: "Exploring new places and making beautiful memories. ✨",
-    };
-
+function Post({ post }) {
     return (
         <article className="post">
 
@@ -23,6 +14,7 @@ function Post() {
             <PostHeader
                 username={post.username}
                 avatar={post.avatar}
+                location={post.location}
             />
 
             {/* Main post image */}
@@ -30,7 +22,7 @@ function Post() {
                 <img
                     className="post-image"
                     src={post.image}
-                    alt="A scenic landscape"
+                    alt={`Post shared by ${post.username}`}
                 />
             </div>
 
@@ -42,6 +34,7 @@ function Post() {
                 username={post.username}
                 caption={post.caption}
                 likes={post.likes}
+                time={post.time}
             />
 
         </article>

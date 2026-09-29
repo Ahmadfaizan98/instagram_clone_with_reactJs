@@ -1,7 +1,7 @@
 import React from "react";
 import "./PostHeader.css";
 
-function PostHeader({ username, avatar }) {
+function PostHeader({ username, avatar, location }) {
     return (
         <div className="post-header">
 
@@ -14,8 +14,15 @@ function PostHeader({ username, avatar }) {
                 />
 
                 <div className="post-user-details">
-                    <span className="post-username">{username}</span>
-                    <span className="post-location">Lahore, Pakistan</span>
+
+                    <span className="post-username">
+                        {username}
+                    </span>
+
+                    <span className="post-location">
+                        {location}
+                    </span>
+
                 </div>
 
             </div>

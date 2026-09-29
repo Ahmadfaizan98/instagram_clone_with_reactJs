@@ -15,6 +15,8 @@
 
 .home-feed {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -30,6 +32,11 @@
 
     .home-content {
         max-width: 975px;
+        margin: 0 auto;
+    }
+
+    .home-feed {
+        max-width: 470px;
         margin: 0 auto;
     }
 

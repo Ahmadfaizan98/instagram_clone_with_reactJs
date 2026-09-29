@@ -1,36 +1,46 @@
 import React from "react";
+
 import Navbar from "../../components/Navbar/Navbar";
 import Stories from "../../components/Stories/Stories";
 import Post from "../../components/Post/Post";
 import BottomNavigation from "../../components/BottomNavigation/BottomNavigation";
 
+import posts from "../../data/posts";
+
 import "./Home.css";
 
 function Home() {
-  return (
-    <main className="home-page">
+    return (
+        <main className="home-page">
 
-      {/* Top navigation */}
-      <Navbar />
+            {/* Top navigation */}
+            <Navbar />
 
-      {/* Main Home content */}
-      <div className="home-content">
+            {/* Main Home content */}
+            <div className="home-content">
 
-        {/* Stories section */}
-        <Stories />
+                {/* Stories section */}
+                <Stories />
 
-        {/* Feed section */}
-        <section className="home-feed">
-          <Post />
-        </section>
+                {/* Feed section */}
+                <section className="home-feed">
 
-      </div>
+                    {posts.map((post) => (
+                        <Post
+                            key={post.id}
+                            post={post}
+                        />
+                    ))}
 
-      {/* Mobile bottom navigation */}
-      <BottomNavigation />
+                </section>
 
-    </main>
-  );
+            </div>
+
+            {/* Mobile bottom navigation */}
+            <BottomNavigation />
+
+        </main>
+    );
 }
 
 export default Home;
