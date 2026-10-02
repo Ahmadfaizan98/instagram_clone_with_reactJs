@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./PostActions.css";
 
-function PostActions() {
-
-    const [isLiked, setIsLiked] = useState(false);
-    const [isSaved, setIsSaved] = useState(false);
-
+function PostActions({
+    isLiked,
+    onLike,
+    isSaved,
+    onSave,
+    onComment,
+}) {
     return (
         <div className="post-actions">
 
@@ -16,7 +18,7 @@ function PostActions() {
                     className={`post-action-button ${isLiked ? "liked" : ""}`}
                     type="button"
                     aria-label={isLiked ? "Unlike post" : "Like post"}
-                    onClick={() => setIsLiked(!isLiked)}
+                    onClick={onLike}
                 >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
@@ -34,6 +36,7 @@ function PostActions() {
                     className="post-action-button"
                     type="button"
                     aria-label="Comment"
+                    onClick={onComment}
                 >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
@@ -77,7 +80,7 @@ function PostActions() {
                 className={`post-action-button save-button ${isSaved ? "saved" : ""}`}
                 type="button"
                 aria-label={isSaved ? "Unsave post" : "Save post"}
-                onClick={() => setIsSaved(!isSaved)}
+                onClick={onSave}
             >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path

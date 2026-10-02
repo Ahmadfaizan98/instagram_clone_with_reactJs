@@ -1,25 +1,126 @@
+
 .post {
     width: 100%;
     background-color: var(--ig-background);
-
     border-bottom: var(--border);
 }
 
+/* Post image */
 .post-image-wrapper {
+    position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
-
     overflow: hidden;
     background-color: var(--ig-secondary-background);
 }
 
 .post-image {
     display: block;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
+}
+
+/* Double-click like indicator */
+.post-liked-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 76px;
+    line-height: 1;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+
+    pointer-events: none;
+}
+
+/* Comments section */
+.post-comments-panel {
+    padding: 12px;
+    border-top: var(--border);
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.post-comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.no-comments {
+    margin: 0;
+    color: var(--ig-secondary-text);
+    font-size: 13px;
+}
+
+/* Individual comment */
+.post-comment {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.post-comment strong {
+    color: var(--ig-text);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.post-comment span {
+    color: var(--ig-text);
+    font-size: 14px;
+}
+
+/* Add comment form */
+.post-comment-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-top: var(--border);
+    padding-top: 12px;
+}
+
+.post-comment-form input {
+    flex: 1;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: var(--ig-text);
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+
+.post-comment-form input::placeholder {
+    color: var(--ig-secondary-text);
+}
+
+.post-comment-form button {
+    border: none;
+    background: transparent;
+
+    color: var(--ig-link);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.post-comment-form button:disabled {
+    opacity: 0.4;
+    cursor: default;
 }
 
 /* Desktop */
